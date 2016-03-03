@@ -16,18 +16,18 @@ open System.Collections.Generic
 
 
 let twoSum (nums:int[]) target =
-    let d = dict (Array.mapi( fun i x->(x,i)) nums |>Array.toSeq)
-    let l = [for v in d do 
-                if d.ContainsKey(target-v.Key) then 
-                    yield (v.Value, d.Item(target-v.Key))]
-    l.[0]
+    let length = nums.Length
+    [for x in 0..length-2 do
+        for y in x+1..length-1 do
+            if nums.[x]+nums.[y] = target then
+                yield (x,y)].Head
+    
 
 [<EntryPoint>]
 let main argv=
-    let nums = [|2;7;11;15|]
-    let tar = 9
+    let nums = [|3;2;4|]
+    let tar = 6
     let (x,y) = twoSum nums tar
     printfn "%d,%d" x y
     Console.ReadKey() |> ignore
     0
-    
