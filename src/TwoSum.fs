@@ -12,16 +12,12 @@ return [0, 1].
 *)
 
 open System
-open System.Collections.Generic
-
 
 let twoSum (nums:int[]) target =
-    let length = nums.Length
-    [for x in 0..length-2 do
-        for y in x+1..length-1 do
-            if nums.[x]+nums.[y] = target then
-                yield (x,y)].Head
-    
+    let rec search (map:Map<int,int>) (arr:int[]) idx = 
+        if map.ContainsKey(target-arr.[idx]) then (map.Item(target-arr.[idx]),idx)
+        else search (map.Add(arr.[idx],idx)) arr (idx+1)
+    search Map.empty nums 0
 
 [<EntryPoint>]
 let main argv=
@@ -31,3 +27,4 @@ let main argv=
     printfn "%d,%d" x y
     Console.ReadKey() |> ignore
     0
+
