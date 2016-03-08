@@ -1,4 +1,4 @@
 #SUMMARY
 
-* [two sum](two-sum.md)
-* [longest substring without repeating characters](longest-substring-without-repeating-characters.md)
+* [two sum](book/two-sum.md)
+* [longest substring without repeating characters](book/longest-substring-without-repeating-characters.md)
