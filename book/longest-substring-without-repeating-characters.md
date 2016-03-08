@@ -1,6 +1,6 @@
 Problem Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
-Solution Source: https://github.com/Twiknight/LeetCode-in-Fsharp/blob/master/src/Longest-Substring-Without-Repeating-Characters.fs
+Solution Source: https://github.com/Twiknight/LeetCode-in-Fsharp/blob/master/code/longest-substring-without-repeating-characters.fs
 
 ***
 
