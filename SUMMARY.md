@@ -1,4 +1,3 @@
 # Summary
 
-* book/summary
 
