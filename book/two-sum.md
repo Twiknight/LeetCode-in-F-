@@ -1,6 +1,6 @@
 LeetCode Problem Link: https://leetcode.com/problems/two-sum/
 
-Solution Source Link: https://github.com/Twiknight/LeetCode-in-Fsharp/blob/master/src/TwoSum.fs
+Solution Source Link: https://github.com/Twiknight/LeetCode-in-Fsharp/blob/master/book/two-sum.md
 
 Problem:
 >Given an array of integers, return indices of the two numbers such that they add up to a specific target.
